@@ -19,7 +19,7 @@ namespace PdfMerger
         {
             get
             {
-                if(documents == null)
+                if (documents == null)
                 {
                     documents = new ObservableCollection<string>();
                 }
@@ -59,7 +59,7 @@ namespace PdfMerger
         {
             get
             {
-                if (SelectedDocument == null || !Documents.Contains(SelectedDocument) || Documents.Count == 1 || Documents.IndexOf(SelectedDocument) == Documents.Count -1)
+                if (SelectedDocument == null || !Documents.Contains(SelectedDocument) || Documents.Count == 1 || Documents.IndexOf(SelectedDocument) == Documents.Count - 1)
                 {
                     return false;
                 }
@@ -70,7 +70,7 @@ namespace PdfMerger
         {
             get
             {
-                if(SelectedDocument == null || !Documents.Contains(SelectedDocument))
+                if (SelectedDocument == null || !Documents.Contains(SelectedDocument))
                 {
                     return false;
                 }
@@ -88,18 +88,18 @@ namespace PdfMerger
         internal void AddPdf()
         {
             OpenFileDialog dialog = new OpenFileDialog();
-            dialog.Filter = "PDF-Dateien (*.pdf)|*.pdf";
+            dialog.Filter = "PDF (*.pdf)|*.pdf";
             dialog.RestoreDirectory = true;
             dialog.Multiselect = true;
 
-            if(dialog.ShowDialog() != DialogResult.OK || string.IsNullOrEmpty(dialog.FileName))
+            if (dialog.ShowDialog() != DialogResult.OK || string.IsNullOrEmpty(dialog.FileName))
             {
                 return;
             }
 
             string newFile = string.Empty;
 
-            foreach(var fileName in dialog.FileNames)
+            foreach (var fileName in dialog.FileNames)
             {
                 newFile = fileName;
 
@@ -124,7 +124,7 @@ namespace PdfMerger
             Documents.Remove(SelectedDocument);
             if (Documents.Count > 0)
             {
-                SelectedDocument = Documents.ElementAt(Math.Min(Math.Max(curIndex - 1, 0), Documents.Count -1));
+                SelectedDocument = Documents.ElementAt(Math.Min(Math.Max(curIndex - 1, 0), Documents.Count - 1));
             }
             else
             {
@@ -157,20 +157,20 @@ namespace PdfMerger
             NotifyButtonChanged();
         }
 
-        
+
         internal void CreatePdf()
         {
             SaveFileDialog dialog = new SaveFileDialog();
-            dialog.Filter = "PDF-Dateien (*.pdf)|*.pdf";
+            dialog.Filter = "PDF (*.pdf)|*.pdf";
             dialog.RestoreDirectory = true;
 
-            if(dialog.ShowDialog() != DialogResult.OK)
+            if (dialog.ShowDialog() != DialogResult.OK)
             {
                 return;
             }
 
             var fileName = dialog.FileName;
-            if(File.Exists(fileName))
+            if (File.Exists(fileName))
             {
                 File.Delete(fileName);
             }

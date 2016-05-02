@@ -22,12 +22,12 @@
 
         <ListBox x:Name="ListBoxItems" Grid.Column="0" Grid.Row="0" Grid.RowSpan="6" VerticalAlignment="Stretch" HorizontalAlignment="Stretch" Margin="5,10,0,5" ItemsSource="{Binding Documents}" SelectedItem="{Binding SelectedDocument}" />
 
-        <Button x:Name="ButtonMoveUp" Content="^" Grid.Column="1" Grid.Row="0" Margin="5,10,5,0" ToolTip="Nach oben schieben" Click="ButtonMoveUp_Click" IsEnabled="{Binding CanMoveUp}" />
-        <Button x:Name="ButtonMoveDown" Content="v" Grid.Column="1" Grid.Row="1"  Margin="5,0,5,10" ToolTip="Nach unten schieben" Click="ButtonMoveDown_Click" IsEnabled="{Binding CanMoveDown}" />
+        <Button x:Name="ButtonMoveUp" Content="^" Grid.Column="1" Grid.Row="0" Margin="5,10,5,0" Click="ButtonMoveUp_Click" IsEnabled="{Binding CanMoveUp}" />
+        <Button x:Name="ButtonMoveDown" Content="v" Grid.Column="1" Grid.Row="1"  Margin="5,0,5,10"  Click="ButtonMoveDown_Click" IsEnabled="{Binding CanMoveDown}" />
 
-        <Button x:Name="ButtonAdd" Content="+" Grid.Column="1" Grid.Row="2"  Margin="5,10,5,0" ToolTip="Pdf hinzufügen" Click="ButtonAdd_Click" />
-        <Button x:Name="ButtonRemove" Content="-" Grid.Column="1" Grid.Row="3"  Margin="5,0,5,10" ToolTip="Pdf entfernen" Click="ButtonRemove_Click" IsEnabled="{Binding CanRemove}"/>
+        <Button x:Name="ButtonAdd" Content="+" Grid.Column="1" Grid.Row="2"  Margin="5,10,5,0" Click="ButtonAdd_Click" />
+        <Button x:Name="ButtonRemove" Content="-" Grid.Column="1" Grid.Row="3"  Margin="5,0,5,10" Click="ButtonRemove_Click" IsEnabled="{Binding CanRemove}"/>
 
-        <Button x:Name="ButtonCreatePdf" Content="✔" Grid.Column="1" Grid.Row="4"  Margin="5" ToolTip="Pdf erstellen" Click="ButtonCreatePdf_Click" IsEnabled="{Binding CanCreate}"/>
+        <Button x:Name="ButtonCreatePdf" Content="✔" Grid.Column="1" Grid.Row="4"  Margin="5" Click="ButtonCreatePdf_Click" IsEnabled="{Binding CanCreate}"/>
     </Grid>
 </Window>
