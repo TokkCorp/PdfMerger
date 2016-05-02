@@ -6,8 +6,9 @@ PfdMerger is just a very small UI for one of [PfdSharp's](http://www.pdfsharp.ne
 
 ## How to
 
-![PdfMerger](https://github.com/TokkCorp/PdfMerger/blob/master/Media/ScreenshotEmpty.png)
-
+![PdfMerger](https://github.com/TokkCorp/PdfMerger/blob/master/Media/ScreenshotEmpty.png) ![PdfMerger](https://github.com/TokkCorp/PdfMerger/blob/master/Media/ScreenshotWithPdf.png)
+  
+  
 ![Add Pdf](https://github.com/TokkCorp/PdfMerger/blob/master/Media/ButtonAdd.png) 
 Opens an Open-File-Dialog for selecting a PDF  
   
