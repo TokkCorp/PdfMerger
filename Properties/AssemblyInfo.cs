@@ -10,7 +10,7 @@ using System.Windows;
 [assembly: AssemblyTitle("PdfMerger")]
 [assembly: AssemblyDescription("Merge PDF-Files")]
 [assembly: AssemblyConfiguration("")]
-[assembly: AssemblyCompany("Tpll Corp")]
+[assembly: AssemblyCompany("Tokk Corp")]
 [assembly: AssemblyProduct("PdfMerger")]
 [assembly: AssemblyCopyright("Copyright ©  2016")]
 [assembly: AssemblyTrademark("")]
