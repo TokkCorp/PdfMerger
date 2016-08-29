@@ -5,7 +5,9 @@ It is usable without installation or administration rights.
 PfdMerger is just a very small UI for one of [PfdSharp's](http://www.pdfsharp.net/NuGetPackage_PDFsharp-GDI.ashx) functions.
 
 ## How to
-
+  
+[Download the newest Release](https://github.com/TokkCorp/PdfMerger/releases)  
+  
 ![PdfMerger](https://github.com/TokkCorp/PdfMerger/blob/master/Media/ScreenshotEmpty.png) ![PdfMerger](https://github.com/TokkCorp/PdfMerger/blob/master/Media/ScreenshotWithPdf.png)
 
 
